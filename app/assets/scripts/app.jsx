@@ -16,3 +16,9 @@ var schema = new GraphQLSchema({
     }
   })
 });
+
+var query = '{ hello }';
+
+graphql(schema, query).then(result => {
+  console.log(result);
+});
